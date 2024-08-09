@@ -19,6 +19,15 @@ export default function App() {
       <Header />
       <Form onAddItems={handleAddItems} />
       <TodoList items={items} onDeleteItem={handleDeleteItem} />
+      <Footer />
     </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <h4>Rishabh Joshi</h4>
+    </footer>
   );
 }
