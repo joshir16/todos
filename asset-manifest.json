@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/joshir16/todos/static/css/main.ace84f51.css",
+    "main.js": "/joshir16/todos/static/js/main.372b7643.js",
+    "index.html": "/joshir16/todos/index.html",
+    "main.ace84f51.css.map": "/joshir16/todos/static/css/main.ace84f51.css.map",
+    "main.372b7643.js.map": "/joshir16/todos/static/js/main.372b7643.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ace84f51.css",
+    "static/js/main.372b7643.js"
+  ]
+}
