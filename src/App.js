@@ -27,7 +27,7 @@ export default function App() {
 function Footer() {
   return (
     <footer className="footer">
-      <h4>Rishabh Joshi</h4>
+      <h4>Rishabh Joshi </h4>
     </footer>
   );
 }
