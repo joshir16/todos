@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TodoList } from "./TodoList";
 import { Form } from "./Form";
 import { Header } from "./Header";
 
 export default function App() {
-  const [items, setItems] = useState([]);
+  const storeditems = JSON.parse(localStorage.getItem("items"));
+  const [items, setItems] = useState(storeditems);
 
   function handleAddItems(task) {
     setItems((items) => [...items, task]);
@@ -13,6 +14,10 @@ export default function App() {
   function handleDeleteItem(id) {
     setItems((items) => items.filter((item) => item.id !== id));
   }
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
 
   return (
     <div className="app">
