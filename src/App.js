@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { TodoList } from "./TodoList";
 import { Form } from "./Form";
 import { Header } from "./Header";
 
 export default function App() {
-  const storeditems = JSON.parse(localStorage.getItem("items"));
-  const [items, setItems] = useState(storeditems);
+  /* const storeditems = JSON.parse(localStorage.getItem("items")); */
+  const [items, setItems] = useState([]);
 
   function handleAddItems(task) {
     setItems((items) => [...items, task]);
@@ -15,9 +15,9 @@ export default function App() {
     setItems((items) => items.filter((item) => item.id !== id));
   }
 
-  useEffect(() => {
+  /*   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
-  }, [items]);
+  }, [items]); */
 
   return (
     <div className="app">
