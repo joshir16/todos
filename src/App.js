@@ -4,7 +4,7 @@ import { Form } from "./Form";
 import { Header } from "./Header";
 
 export default function App() {
-  const storeditems = JSON.parse(localStorage.getItem("items"));
+  const storeditems = JSON.parse(localStorage.getItem("items")) || [];
   console.log(storeditems);
   const [items, setItems] = useState(storeditems);
 
