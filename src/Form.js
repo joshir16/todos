@@ -15,7 +15,7 @@ export function Form({ onAddItems, onDeleteItem }) {
   }
 
   return (
-    <form className="form" onClick={handleSubmit}>
+    <form id="form" className="form" onClick={handleSubmit}>
       <h3>What do you want todo?</h3>
       <div>
         <input
